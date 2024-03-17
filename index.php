@@ -21,6 +21,10 @@
 
         <!-- Theme style CSS -->
         <link href="css/style.css" rel="stylesheet">
+        <!-- Include dark mode CSS based on FEATURE_DARK_MODE -->
+        <?php if ($_ENV['FEATURE_DARK_MODE'] === 'true') : ?>
+            <link rel="stylesheet" href="css/dark-mode.css">
+        <?php endif; ?>
 <!--        <link href="css/responsive.css" rel="stylesheet">  -->
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -30,7 +34,7 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body class="<?php echo ($_ENV['FEATURE_DARK_MODE'] === 'true') ? 'dark-mode' : ''; ?>">
         <!--==========Main Header==========-->
         <header class="main_header_area">
             <nav class="navbar navbar-default navbar-fixed-top" id="main_navbar">
