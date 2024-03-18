@@ -96,7 +96,18 @@
             </div>
         </section>
         <!--==========End Slider area==========-->
-
+        <!-- New Promotional Banner -->
+        <section class="promotional_banner_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="promo_banner_img">
+                            <img src="img/promotional-banner.jpg" alt="Promotional Banner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="best_business_area row">
             <div class="check_tittle wow fadeInUp" data-wow-delay="0.7s" id="product-list">
                 <h2>Product List</h2>
